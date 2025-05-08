@@ -21,7 +21,6 @@ export default function ProjectsSection() {
             🚀 Projects
           </h2>
         </MotionWrapper>
-
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project, index) => (
             <MotionWrapper key={project.title} delay={index * 0.2}>
@@ -47,18 +46,37 @@ export default function ProjectsSection() {
                     ))}
                   </ul>
                 </CardContent>
+                <CardContent className="flex-grow">
+                  {project.image && (
+                    <img src={`/public/screenshots/${project.image}`} alt={project.title} />
+                  )}
+                    {project.extraLink && (
+                      <motion.a
+                        href={project.extraLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center text-sm text-muted-foreground hover:text-purple-500 transition-colors group/link pt-8"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                      >
+                        View website 🔗
+                      </motion.a>
+                    )}
+                </CardContent>
                 <CardFooter className="flex justify-center md:justify-start items-center border-t border-border/30 bg-gradient-to-r from-purple-500/5 to-pink-500/5">
-                  <motion.a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center text-sm text-muted-foreground hover:text-purple-500 transition-colors group/link pt-8"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    <Github className="h-4 w-4 mr-2 group-hover/link:rotate-12 transition-transform duration-300" />
-                    View on GitHub 🔗
-                  </motion.a>
+                  {project.github && (
+                    <motion.a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center text-sm text-muted-foreground hover:text-purple-500 transition-colors group/link pt-8"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      <Github className="h-4 w-4 mr-2 group-hover/link:rotate-12 transition-transform duration-300" />
+                      View on GitHub 🔗
+                    </motion.a>
+                  )}                  
                 </CardFooter>
               </GlassCard>
             </MotionWrapper>
