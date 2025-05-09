@@ -48,7 +48,7 @@ export default function ProjectsSection() {
                 </CardContent>
                 <CardContent className="flex-grow">
                   {project.image && (
-                    <img src={`/public/screenshots/${project.image}`} alt={project.title} />
+                    <img src={`/screenshots/${project.image}`} alt={project.title} />
                   )}
                     {project.extraLink && (
                       <motion.a
