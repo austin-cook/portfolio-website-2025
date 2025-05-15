@@ -50,7 +50,7 @@ export const skills = {
     "CSS",
   ],
   backendDevelopment: ["Nodejs", "Expressjs", "Flask"],
-  databaseAndStorage: ["DynamoDB", "MongoDB", "Redis", "SQL"],
+  databaseAndStorage: ["DynamoDB", "S3", "MongoDB", "Redis", "SQL"],
   cloudAndDevOps: ["AWS", "GitHub Actions", "Docker", "Terraform", "Serverless with AWS Lambda"],
   toolsAndServices: [
     "Linux", "ChatGPT API", "NumPy", "Scikit-Learn ML", "REST API"
@@ -65,7 +65,7 @@ export const projects = [
       "A serverless Twitter clone built with React and TypeScript, developed from a starter UI and architected for scalability and maintainability",
       "Implemented core features including user registration/authentication, posting, following/unfollowing, and viewing feed, story, followees, and followers",
       "Applied established design patterns: Model-View-Presenter, Facade, Template Method, Factory, and generics with a strong emphasis on decoupling dependencies",
-      "Incorporated AWS Lambda functions for serverlessbackend logic, used AWS DynamoDB for scalable data persistence, and leveraged AWS SQS to queue and process large-scale operations asynchronously",
+      "Incorporated AWS Lambda functions for serverlessbackend logic, used AWS DynamoDB and S3for scalable data persistence, and leveraged AWS SQS to queue and process large-scale operations asynchronously",
       "Integrated password hashing and salting for secure authentication",
       "Wrote shell scripts to automate build and cloud resource deployment",
     ],
@@ -75,7 +75,7 @@ export const projects = [
     title: "Java Constant Propagation",
     github: "https://github.com/austin-cook/cs-329-constant-propagation",
     description: [
-      "Developed a Java code optimization compiler compiler that eliminates redundancies through constant folding and constant propagation",
+      "Developed a Java code optimization compiler that eliminates redundancies through constant folding and constant propagation",
       "Utilized the Eclipse JDT Abstract Syntax Tree (AST) and API to parse, analyze, and transform Java source code",
       "Implemented a reaching definitions analysis module to support constant propagation",
       "Applied the visitor design pattern to modify AST components",
@@ -147,7 +147,7 @@ export const projects = [
     title: "Turing Complete Programming Language",
     github: "https://github.com/austin-cook/cs-330",
     description: [
-      "Designed and implemented a Turing-complete programming language using Shplait, a language in the Racket family",
+      "Implemented a Turing-complete programming language using Shplait, a language in the Racket family",
       "Built a parser to convert source code into an Abstract Syntax Tree (AST)",
       "Added support for key programming constructs including conditionals, variable, functions, mutation, and exception handling",
       "Developed a desugarer to translate high-level surface syntax into a unified core representation, enabling easy extension of language features",
