@@ -30,7 +30,8 @@ export const education = [
     degree: "BS in Computer Science",
     period: "Aug 2021 - Apr 2025",
     achievements: [
-      "GPA: 4.0"
+      "Summa Cum Laude | GPA: 4.0",
+
     ],
   },
 ];
@@ -65,7 +66,7 @@ export const projects = [
       "A serverless Twitter clone built with React and TypeScript, developed from a starter UI and architected for scalability and maintainability",
       "Implemented core features including user registration/authentication, posting, following/unfollowing, and viewing feed, story, followees, and followers",
       "Applied established design patterns: Model-View-Presenter, Facade, Template Method, Factory, and generics with a strong emphasis on decoupling dependencies",
-      "Incorporated AWS Lambda functions for serverlessbackend logic, used AWS DynamoDB and S3for scalable data persistence, and leveraged AWS SQS to queue and process large-scale operations asynchronously",
+      "Incorporated AWS Lambda functions for serverless backend logic, used AWS DynamoDB and S3 for scalable data persistence, and leveraged AWS SQS to queue and process large-scale operations asynchronously",
       "Integrated password hashing and salting for secure authentication",
       "Wrote shell scripts to automate build and cloud resource deployment",
     ],
