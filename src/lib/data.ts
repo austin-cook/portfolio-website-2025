@@ -31,7 +31,6 @@ export const education = [
     period: "Aug 2021 - Apr 2025",
     achievements: [
       "Summa Cum Laude | GPA: 4.0",
-
     ],
   },
 ];
@@ -129,9 +128,9 @@ export const projects = [
     title: "Reversi Game Play Agent",
     github: "https://github.com/austin-cook/cs-470-reversi-agent",
     description: [
-      "Developed two AI agents forReversi using the Minimax algorithm with Alpha-Beta Pruning and Monte Carlo Tree Search (MCTS)",
+      "Developed two AI agents for Reversi using the Minimax algorithm with Alpha-Beta Pruning and Monte Carlo Tree Search (MCTS)",
       "Designed and implemented custom heuristic functions to evaluate game state value and guide decision making",
-      "🏆 Won 1st place in a class tournament, outperforming other Minimax-based agents",
+      "🏆 Won 1st place in a class tournament, outperforming all other students' Minimax-based agents",
     ],
     image: "reversi.png",
   },
